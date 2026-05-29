@@ -454,11 +454,11 @@ h1.hero-title .light{
   width:100%;
   height:100%;
   object-fit:cover;
-  opacity:0.85;
+  opacity:0.4;
   transition:opacity .4s ease, transform .6s ease;
 }
 .proj-visual:hover .proj-img{
-  opacity:1;
+  opacity:0.6;
   transform:scale(1.02);
 }
 
