@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabbibada — Creative Technologist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="cur-ring"></div>
+<div class="cursor-glow" id="cur-glow"></div>
+<div class="cursor-label" id="cur-label">View Project →</div>
+
+<!-- Scroll progress -->
+<div id="prog-bar"></div>
+
+<!-- ── LOADER ─────────────────────────────────── -->
+<div id="loader">
+  <div class="loader-bar" id="lbar"></div>
+  <div class="loader-tag">Initialising</div>
+  <div class="loader-num">
+    <span id="lcount">00</span>
+    <span class="pct">%</span>
+  </div>
+</div>
+
+<!-- ── NAV ───────────────────────────────────── -->
+<nav id="nav">
+  <a href="#" class="nav-logo">Gabbibada</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#disciplines">Work</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── MOBILE MENU ────────────────────────────── -->
+<div class="mm" id="mm">
+  <ul class="mm-links">
+    <li><a href="#about" class="mm-a">About</a></li>
+    <li><a href="#disciplines" class="mm-a">Work</a></li>
+    <li><a href="#projects" class="mm-a">Projects</a></li>
+    <li><a href="#experience" class="mm-a">Experience</a></li>
+    <li><a href="#contact" class="mm-a">Contact</a></li>
+  </ul>
+  <div class="mm-foot">© 2025 Gabbibada Ltd · The space in between</div>
+</div>
+
+<!-- ── HERO ──────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-eyebrow">Creative Technologist</div>
+  <h1 class="hero-title" id="hero-title">
+    <span class="hw"><span class="hwi">Building</span></span><br>
+    <span class="hw"><span class="hwi d1 light">the space</span></span><br>
+    <span class="hw"><span class="hwi d2">in between</span></span>
+  </h1>
+  <div class="hero-foot">
+    <span class="hero-id">Gabriel Bada &nbsp;·&nbsp; @gabbibada</span>
+    <span class="hero-scroll">Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ── MARQUEE ────────────────────────────────── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Film &amp; Cinematography</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">AI / Machine Learning</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Brand Strategy</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Product Design</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Web Development</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">AV Direction</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Mobile Development</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">DaVinci Colour Grading</span>
+    <span class="marquee-item dot">◆</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Film &amp; Cinematography</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">AI / Machine Learning</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Brand Strategy</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Product Design</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Web Development</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">AV Direction</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">Mobile Development</span>
+    <span class="marquee-item dot">◆</span>
+    <span class="marquee-item">DaVinci Colour Grading</span>
+    <span class="marquee-item dot">◆</span>
+  </div>
+</div>
+
+<!-- ── STATS STRIP ───────────────────────────── -->
+<div class="stats-strip">
+  <div class="stat rv">
+    <div class="stat-num" data-count="20">0<span class="suf">+</span></div>
+    <div class="stat-label">Projects</div>
+  </div>
+  <div class="stat rv d1">
+    <div class="stat-num" data-count="8">0<span class="suf">+</span></div>
+    <div class="stat-label">Industries</div>
+  </div>
+  <div class="stat rv d2">
+    <div class="stat-num" data-count="6">0</div>
+    <div class="stat-label">Disciplines</div>
+  </div>
+  <div class="stat rv d4">
+    <div class="stat-num" data-count="10">0<span class="suf">+</span></div>
+    <div class="stat-label">Years Active</div>
+  </div>
+</div>
+<section id="about">
+  <div class="sec-label">About</div>
+  <div class="about-grid">
+    <div class="about-num rv">01</div>
+    <div class="about-body rv d1">
+      <p>I'm a <strong>Creative Technologist</strong> operating at the rare intersection of art, technology, and storytelling — not as a generalist, but as someone who has mastered multiple disciplines at <strong>senior level simultaneously</strong>.</p>
+      <p>Nigerian-born. England-based. Globally minded. My career has been the answer to a single frustration: brilliant technical systems built without soul, and visually stunning creative work built without infrastructure.</p>
+      <p>I realised early that the future belongs to people who can <strong>bridge both worlds</strong> — those who understand aesthetics and engineering, emotion and systems, narrative and execution.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── DISCIPLINES ────────────────────────────── -->
+<section id="disciplines">
+  <div class="sec-head">
+    <h2 class="sec-title rv">What I do</h2>
+    <span class="sec-ct">06 Disciplines</span>
+  </div>
+  <div class="disc-grid">
+
+    <div class="disc-card rv">
+      <div class="disc-n">01</div>
+      <h3 class="disc-name">Film &amp;<br><span>Cinematography</span></h3>
+      <p class="disc-desc">Full-pipeline filmmaking — from concept and storyboarding through on-set direction, cinematography, and post-production finishing. Sony systems. DaVinci Resolve. Every frame intentional.</p>
+      <span class="disc-arr">→</span>
+    </div>
+
+    <div class="disc-card rv d1">
+      <div class="disc-n">02</div>
+      <h3 class="disc-name">AI / ML<br><span>Specialist</span></h3>
+      <p class="disc-desc">Applied AI at the creative edge — not as a shortcut, but as a medium. Generative systems, architectural visualisations, and Teti: a proprietary podcast experience engine built on adaptive AI.</p>
+      <span class="disc-arr">→</span>
+    </div>
+
+    <div class="disc-card rv d2">
+      <div class="disc-n">03</div>
+      <h3 class="disc-name">Brand<br><span>Strategy</span></h3>
+      <p class="disc-desc">Brand as a systems problem. Philosophy first, visual language second. Across 8 industries — real estate, automotive, healthcare, education — I build brands that behave coherently at every touchpoint.</p>
+      <span class="disc-arr">→</span>
+    </div>
+
+    <div class="disc-card rv d1">
+      <div class="disc-n">04</div>
+      <h3 class="disc-name">Product<br><span>Design</span></h3>
+      <p class="disc-desc">Senior-level design across web and mobile. Designing not just screens, but the logic, flow, and emotional experience that connects them. Systems thinking with a designer's sensibility.</p>
+      <span class="disc-arr">→</span>
+    </div>
+
+    <div class="disc-card rv d2">
+      <div class="disc-n">05</div>
+      <h3 class="disc-name">Development<br><span>Systems</span></h3>
+      <p class="disc-desc">I build what I design. Web development, system programming, mobile applications — operating on both sides of the design-development boundary. Creative decisions technically grounded.</p>
+      <span class="disc-arr">→</span>
+    </div>
+
+    <div class="disc-card rv d3">
+      <div class="disc-n">06</div>
+      <h3 class="disc-name">Audio Visual<br><span>Direction</span></h3>
+      <p class="disc-desc">End-to-end AV production and direction at ODIO Digital Inc. Every element of a production — visible or invisible — should be as intentional as what the audience ultimately experiences.</p>
+      <span class="disc-arr">→</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PROJECTS ───────────────────────────────── -->
+<section id="projects">
+  <div class="sec-head">
+    <h2 class="sec-title rv">Selected Work</h2>
+    <span class="sec-ct">07 Projects</span>
+  </div>
+
+  <div class="proj-index rv">
+    <a href="#proj-1" class="proj-index-item"><span class="pi-name">Precision Timber</span><span class="pi-num">01</span></a>
+    <a href="#proj-2" class="proj-index-item"><span class="pi-name">LandWey</span><span class="pi-num">02</span></a>
+    <a href="#proj-3" class="proj-index-item"><span class="pi-name">Isimi Lagos</span><span class="pi-num">03</span></a>
+    <a href="#proj-4" class="proj-index-item"><span class="pi-name">The Nod</span><span class="pi-num">04</span></a>
+    <a href="#proj-5" class="proj-index-item"><span class="pi-name">Odio Digital</span><span class="pi-num">05</span></a>
+    <a href="#proj-6" class="proj-index-item"><span class="pi-name">MyQura</span><span class="pi-num">06</span></a>
+    <a href="#proj-7" class="proj-index-item"><span class="pi-name">Nord Tank</span><span class="pi-num">07</span></a>    
+    <a href="#proj-8" class="proj-index-item"><span class="pi-name">TASUED</span><span class="pi-num">08</span></a>
+  </div>
+
+  <!-- ── PRECISION TIMBER (01) ── -->
+  <div class="proj-entry" id="proj-1">
+    <div class="proj-top rv">
+      <div class="proj-num">01</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">Precision Timber</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">Digital Marketing Lead</span>
+          <span class="proj-tag">Playground Development</span>
+          <span class="proj-tag">England</span>
+          <span class="proj-tag">Current</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-visual rv">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow" style="background:radial-gradient(ellipse,rgba(180,130,60,.07),transparent 65%);"></div>
+      <!-- timber/grid pattern motif -->
+      <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 28px,rgba(180,130,60,.06) 28px,rgba(180,130,60,.06) 30px),repeating-linear-gradient(90deg,transparent,transparent 28px,rgba(180,130,60,.06) 28px,rgba(180,130,60,.06) 30px);"></div>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:clamp(60px,8vw,100px);height:clamp(80px,10vw,130px);border:1px solid rgba(180,130,60,.2);"></div>
+      <div class="proj-visual-bg-text">Timber</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot" style="background:rgba(180,130,60,.8);"></div>
+        <div class="proj-visual-info">Playground Development &nbsp;·&nbsp; <span>England</span></div>
+      </div>
+      <div class="proj-visual-corner">Campaign / Social Content</div>
+    </div>
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>Precision Timber is a specialist playground development company based in England, crafting bespoke outdoor play environments that blend natural timber craftsmanship with considered spatial design.</p>
+        <p>As <strong>Digital Marketing Lead</strong>, the mandate is to build a compelling digital presence that communicates Precision Timber's craft, values, and work to clients, specifiers, and communities across England — while Gabbibada Ltd is being built in parallel.</p>
+        <p>The work is a live exercise in a core discipline: taking a company with genuine <strong>craft heritage</strong> and giving it the digital vocabulary it deserves — so the quality of the work online matches the quality of the timber in the ground.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">Digital Marketing Strategy</li>
+          <li class="proj-scope-item">Social Media Direction &amp; Content</li>
+          <li class="proj-scope-item">Brand Communication</li>
+          <li class="proj-scope-item">Campaign Planning &amp; Execution</li>
+          <li class="proj-scope-item">Photography Art Direction</li>
+          <li class="proj-scope-item">Audience Growth &amp; Engagement</li>
+        </ul>
+        <a href="https://www.instagram.com/precision.timber/" target="_blank" rel="noopener" class="proj-cta">View @precision.timber <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LandWey -->
+  <div class="proj-entry" id="proj-2">
+    <div class="proj-top rv">
+      <div class="proj-num">02</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">LandWey</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">Head of Creative</span>
+          <span class="proj-tag">Real Estate</span>
+          <span class="proj-tag">Lagos, Nigeria</span>
+          <span class="proj-tag">Brand &amp; Campaign</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual placeholder — replace src with real image -->
+    <div class="proj-visual rv">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow"></div>
+      <div class="proj-arch"></div>
+      <div class="proj-visual-bg-text">LandWey</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot"></div>
+        <div class="proj-visual-info">Premium Real Estate &nbsp;·&nbsp; <span>Lagos, Nigeria</span></div>
+      </div>
+      <div class="proj-visual-corner">Image / Campaign Visual</div>
+    </div>
+
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>LandWey is one of Nigeria's most ambitious premium real estate development companies — an organisation building not just properties, but a new language for how Africans relate to home ownership and property investment.</p>
+        <p>As <strong>Head of Creative</strong>, the mandate was total: own the visual and strategic identity of the brand across every surface — digital, print, campaign, and environment. I redefined what LandWey looked and felt like to the world, and built the creative infrastructure to sustain that standard at scale.</p>
+        <p>The work centred on a core conviction: that a <strong>premium real estate brand</strong> in Lagos should look and feel genuinely premium — not like a local approximation of a global standard, but something with its own authority, aesthetic, and voice.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">Campaign Strategy &amp; Direction</li>
+          <li class="proj-scope-item">Digital Brand Identity</li>
+          <li class="proj-scope-item">Social Media Creative Direction</li>
+          <li class="proj-scope-item">Marketing Collateral Design</li>
+          <li class="proj-scope-item">Video Production &amp; Direction</li>
+          <li class="proj-scope-item">Website Creative Direction</li>
+          <li class="proj-scope-item">Photography Art Direction</li>
+          <li class="proj-scope-item">Brand Standards &amp; Guidelines</li>
+        </ul>
+        <a href="#contact" class="proj-cta">Enquire about this work <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ISIMI LAGOS ── -->
+  <div class="proj-entry" id="proj-3">
+    <div class="proj-top rv">
+      <div class="proj-num">03</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">Isimi Lagos</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">Creative Head</span>
+          <span class="proj-tag">Wellness &amp; Polo Estate</span>
+          <span class="proj-tag">Epe, Lagos</span>
+          <span class="proj-tag">LandWey</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-visual rv" style="--glow-color:rgba(94,255,163,0.06);">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow" style="background:radial-gradient(ellipse,var(--glow-color),transparent 65%);"></div>
+      <!-- organic circle motif -->
+      <div style="position:absolute;width:clamp(120px,18vw,240px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(94,255,163,.14);top:50%;left:50%;transform:translate(-50%,-52%);"></div>
+      <div style="position:absolute;width:clamp(80px,12vw,160px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(94,255,163,.08);top:50%;left:50%;transform:translate(-50%,-52%);"></div>
+      <div class="proj-visual-bg-text">Isimi</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot" style="background:var(--accent-2);"></div>
+        <div class="proj-visual-info">Nigeria's First Exclusive Polo &amp; Wellness Estate &nbsp;·&nbsp; <span>2M sqm · Epe, Lagos</span></div>
+      </div>
+      <div class="proj-visual-corner">Image / Campaign Visual</div>
+    </div>
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>Isimi Lagos is one of Africa's most ambitious luxury lifestyle projects — Nigeria's first exclusive polo and wellness country estate, spanning over 2 million square metres in Epe, Lagos, and powered by LandWey.</p>
+        <p>As <strong>Creative Head</strong>, my role was to define the visual and experiential language of a brand that had no precedent in Nigeria. Isimi is not a real estate product — it is a <strong>way of life</strong>. Membership by invitation only. 500,000 trees planted. Polo, wellness, architecture, and quiet luxury woven into a single living system.</p>
+        <p>The creative challenge was translating that vision into a brand that felt as elevated as the estate itself — compelling to a global audience while remaining deeply, authentically Nigerian in its soul and intention.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">Creative Direction &amp; Brand Vision</li>
+          <li class="proj-scope-item">Campaign Strategy &amp; Execution</li>
+          <li class="proj-scope-item">Social Media Direction (89K+ Followers)</li>
+          <li class="proj-scope-item">Luxury Brand Positioning</li>
+          <li class="proj-scope-item">Photography &amp; Video Art Direction</li>
+          <li class="proj-scope-item">Digital Presence &amp; Content Strategy</li>
+          <li class="proj-scope-item">Event &amp; Experience Communication</li>
+        </ul>
+        <a href="#contact" class="proj-cta">Enquire about this work <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── THE NOD APP (ODIOTECH) ── -->
+  <div class="proj-entry" id="proj-4">
+    <div class="proj-top rv">
+      <div class="proj-num">04</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">The Nod</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">Senior Product Designer</span>
+          <span class="proj-tag">Odiotech</span>
+          <span class="proj-tag">Social Commerce</span>
+          <span class="proj-tag">iOS &amp; Android</span>
+          <span class="proj-tag">Canada</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-visual rv">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow" style="background:radial-gradient(ellipse,rgba(201,168,76,.06),transparent 65%);"></div>
+      <!-- app UI motif — stacked cards -->
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);display:flex;flex-direction:column;gap:8px;width:clamp(180px,22vw,280px);">
+        <div style="height:clamp(32px,4vw,48px);background:rgba(240,237,230,.035);border:1px solid var(--line);border-radius:6px;"></div>
+        <div style="height:clamp(24px,3vw,36px);background:rgba(240,237,230,.025);border:1px solid var(--line);border-radius:6px;width:85%;"></div>
+        <div style="height:clamp(24px,3vw,36px);background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.15);border-radius:6px;width:70%;"></div>
+      </div>
+      <div class="proj-visual-bg-text">Nod</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot"></div>
+        <div class="proj-visual-info">Canada's First Black-Owned Social Commerce Platform &nbsp;·&nbsp; <span>User &amp; Admin</span></div>
+      </div>
+      <div class="proj-visual-corner">App Screens / UI</div>
+    </div>
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>The Nod App is Canada's first social e-commerce platform built to intentionally recirculate $100M through 500+ Canadian Black-owned businesses — a movement disguised as an app, designed to transform everyday purchases into systemic community wealth.</p>
+        <p>As <strong>Senior Product Designer at Odiotech</strong>, I designed both the <strong>User App</strong> and the <strong>Admin platform</strong> — two distinct products serving two entirely different audiences, but sharing a single design language and a common mission.</p>
+        <p>The User App needed to feel empowering and intuitive: Radar (real-time discovery), NodWallet (community finance), Groups (collective buying), Care (anonymous giving), and Spin &amp; Win (engagement rewards). The Admin platform needed power and clarity — tools for business owners to manage listings, track impact, and serve their community with confidence.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">End-to-End User App Design (iOS &amp; Android)</li>
+          <li class="proj-scope-item">Admin Dashboard Design</li>
+          <li class="proj-scope-item">UX Architecture &amp; User Flows</li>
+          <li class="proj-scope-item">Design System &amp; Component Library</li>
+          <li class="proj-scope-item">Radar, NodWallet &amp; Groups Features</li>
+          <li class="proj-scope-item">Onboarding Experience Design</li>
+          <li class="proj-scope-item">Prototyping &amp; Handoff</li>
+        </ul>
+        <a href="https://thenodapp.ca" target="_blank" rel="noopener" class="proj-cta">Visit thenodapp.ca <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ODIO DIGITAL ── -->
+  <div class="proj-entry" id="proj-5">
+    <div class="proj-top rv">
+      <div class="proj-num">05</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">Odio Digital</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">Director of Audio Visual</span>
+          <span class="proj-tag">Digital Marketing Agency</span>
+          <span class="proj-tag">Multi-Brand</span>
+          <span class="proj-tag">Canada</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-visual rv">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow" style="background:radial-gradient(ellipse,rgba(201,168,76,.05),transparent 65%);"></div>
+      <!-- signal/amplifier wave motif -->
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;gap:clamp(6px,1vw,12px);align-items:center;">
+        <div style="width:3px;height:clamp(20px,3vw,36px);background:rgba(240,237,230,.1);border-radius:2px;"></div>
+        <div style="width:3px;height:clamp(32px,5vw,56px);background:rgba(240,237,230,.12);border-radius:2px;"></div>
+        <div style="width:3px;height:clamp(48px,7vw,80px);background:rgba(201,168,76,.3);border-radius:2px;"></div>
+        <div style="width:3px;height:clamp(60px,9vw,110px);background:rgba(201,168,76,.5);border-radius:2px;"></div>
+        <div style="width:3px;height:clamp(48px,7vw,80px);background:rgba(201,168,76,.3);border-radius:2px;"></div>
+        <div style="width:3px;height:clamp(32px,5vw,56px);background:rgba(240,237,230,.12);border-radius:2px;"></div>
+        <div style="width:3px;height:clamp(20px,3vw,36px);background:rgba(240,237,230,.1);border-radius:2px;"></div>
+      </div>
+      <div class="proj-visual-bg-text">Odio</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot"></div>
+        <div class="proj-visual-info">Brand Amplifier Agency &nbsp;·&nbsp; <span>Multi-Client AV Direction</span></div>
+      </div>
+      <div class="proj-visual-corner">Reel / Campaign Stills</div>
+    </div>
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>Odio Digital Inc is a Canadian digital marketing agency built on a single purpose: amplifying brands — turbocharging their digital marketing strategy for seamless scaling and measurable success.</p>
+        <p>As <strong>Director of Audio Visual</strong>, I led end-to-end AV production and creative direction across Odio's entire client portfolio — spanning brands across different sectors, each with its own voice, audience, and visual language.</p>
+        <p>The role required the rarest combination in creative work: <strong>technical mastery</strong> of the production pipeline and <strong>strategic clarity</strong> about what each brand needed to communicate. Not just making great-looking content — but making content that moved the needle for the brands it served.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">AV Production Direction (Multi-Brand)</li>
+          <li class="proj-scope-item">Cinematography &amp; Camera Direction</li>
+          <li class="proj-scope-item">Post-Production &amp; Colour Grading</li>
+          <li class="proj-scope-item">Social Content Strategy &amp; Execution</li>
+          <li class="proj-scope-item">Brand Video &amp; Campaign Delivery</li>
+          <li class="proj-scope-item">Creative Brief Development</li>
+          <li class="proj-scope-item">Motion Graphics Direction</li>
+        </ul>
+        <a href="https://odiohq.ca" target="_blank" rel="noopener" class="proj-cta">Visit odiohq.ca <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MYQURA ── -->
+  <div class="proj-entry" id="proj-6">
+    <div class="proj-top rv">
+      <div class="proj-num">06</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">MyQura</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">Creative Director</span>
+          <span class="proj-tag">Healthcare &amp; Care Tech</span>
+          <span class="proj-tag">Nigeria</span>
+          <span class="proj-tag">Formerly MyCare Assistant</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-visual rv">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow" style="background:radial-gradient(ellipse,rgba(94,255,163,.05),transparent 65%);"></div>
+      <!-- care/cross motif -->
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:clamp(48px,6vw,80px);height:clamp(48px,6vw,80px);">
+        <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:rgba(94,255,163,.2);transform:translateY(-50%);"></div>
+        <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(94,255,163,.2);transform:translateX(-50%);"></div>
+      </div>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:clamp(100px,14vw,180px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(94,255,163,.1);"></div>
+      <div class="proj-visual-bg-text">MyQura</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot" style="background:var(--accent-2);"></div>
+        <div class="proj-visual-info">Africa's First Integrated Care Ecosystem &nbsp;·&nbsp; <span>Care. Comfort. Connection.</span></div>
+      </div>
+      <div class="proj-visual-corner">Brand / Campaign Visual</div>
+    </div>
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>MyQura — formerly MyCare Assistant — is a landmark healthcare initiative building Africa's first integrated care ecosystem: combining a caregiver app, training institute, ambulance service, and residential care centre under one brand built on compassion and technology.</p>
+        <p>As <strong>Creative Director</strong>, the work was transformational in the most literal sense — overseeing the evolution from MyCare Assistant to MyQura, a rebranding that required not just a new name but an entirely new visual language, brand architecture, and communication strategy befitting an organisation with genuine national ambition.</p>
+        <p>Healthcare creative demands a different register: <strong>warmth without sentimentality</strong>, authority without coldness, and clarity that works for families navigating some of the most important decisions of their lives.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">Brand Rebrand (MyCare → MyQura)</li>
+          <li class="proj-scope-item">Creative Direction &amp; Visual Identity</li>
+          <li class="proj-scope-item">Digital Brand Strategy</li>
+          <li class="proj-scope-item">Campaign Direction &amp; Execution</li>
+          <li class="proj-scope-item">App &amp; Platform Creative</li>
+          <li class="proj-scope-item">Stakeholder Communication Design</li>
+          <li class="proj-scope-item">Brand Tone &amp; Messaging Framework</li>
+        </ul>
+        <a href="https://myqura.org" target="_blank" rel="noopener" class="proj-cta">Visit myqura.org <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NORD AUTOMOBILE ── -->
+  <div class="proj-entry" id="proj-7">
+    <div class="proj-top rv">
+      <div class="proj-num">07</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">Nord Tank</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">Commercial Director</span>
+          <span class="proj-tag">Nord Automobile</span>
+          <span class="proj-tag">Africa's Premier Auto Corp</span>
+          <span class="proj-tag">Market Launch</span>
+          <span class="proj-tag">Nigeria</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-visual rv">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow" style="background:radial-gradient(ellipse,rgba(201,168,76,.07),transparent 65%);"></div>
+      <!-- speed-line / automotive motion motif -->
+      <div style="position:absolute;inset:0;overflow:hidden;">
+        <div style="position:absolute;top:42%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.35) 40%,rgba(201,168,76,.7) 60%,transparent 100%);"></div>
+        <div style="position:absolute;top:46%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.2) 45%,rgba(201,168,76,.45) 65%,transparent 100%);"></div>
+        <div style="position:absolute;top:50%;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(240,237,230,.08) 30%,rgba(240,237,230,.18) 55%,transparent 100%);"></div>
+        <div style="position:absolute;top:54%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.2) 45%,rgba(201,168,76,.45) 65%,transparent 100%);"></div>
+        <div style="position:absolute;top:58%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.35) 40%,rgba(201,168,76,.7) 60%,transparent 100%);"></div>
+        <!-- wheel silhouette -->
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(80px,11vw,150px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(201,168,76,.22);"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(50px,7vw,96px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(201,168,76,.12);"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(14px,2vw,24px);aspect-ratio:1;border-radius:50%;background:rgba(201,168,76,.25);"></div>
+      </div>
+      <div class="proj-visual-bg-text">Tank</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot"></div>
+        <div class="proj-visual-info">Africa's Premier Automobile Corporation &nbsp;·&nbsp; <span>Market Launch Commercial</span></div>
+      </div>
+      <div class="proj-visual-corner">Commercial Stills / Reel</div>
+    </div>
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>Nord Motion is Africa's premier automobile corporation — a bold, continent-defining statement about what African industry can build and bring to market. The Nord Tank is its most rugged expression: a vehicle built to command attention, inspire confidence, and signal a new era for African motoring.</p>
+        <p>I directed the <strong>very first commercials</strong> that introduced the Nord Tank to the market — the launch films that would define the vehicle's personality before the world had ever seen it move. First impressions in automotive advertising are everything. There is no second chance to introduce a car. The commercials had to carry the full weight of that moment: the authority of the brand, the character of the vehicle, and the ambition of an African company announcing itself to the world.</p>
+        <p>This is the work that exists at the sharpest intersection of my craft — <strong>filmmaking, brand strategy, and commercial direction</strong> — all three disciplines required simultaneously, under the highest possible creative standard.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">Commercial Concept &amp; Direction</li>
+          <li class="proj-scope-item">Cinematography &amp; Camera Direction</li>
+          <li class="proj-scope-item">Pre-Production &amp; Storyboarding</li>
+          <li class="proj-scope-item">On-Set Direction &amp; Production</li>
+          <li class="proj-scope-item">Post-Production &amp; Colour Grade</li>
+          <li class="proj-scope-item">Vehicle Launch Strategy</li>
+          <li class="proj-scope-item">Brand Narrative &amp; Tone</li>
+        </ul>
+        <a href="https://nordmotion.com/vehicle/nord-tank/" target="_blank" rel="noopener" class="proj-cta">View the Nord Tank <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TASUED ── -->
+  <div class="proj-entry" id="proj-8">
+    <div class="proj-top rv">
+      <div class="proj-num">08</div>
+      <div class="proj-client-wrap">
+        <div class="proj-client">TASUED</div>
+        <div class="proj-tags">
+          <span class="proj-tag acc">System Programmer & Mobile Application Developer</span>
+          <span class="proj-tag">Tai Solarin University of Education</span>
+          <span class="proj-tag">The Nation Premier and Preferred University of Educatio</span>
+          <span class="proj-tag">Nigeria</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-visual rv">
+      <div class="proj-visual-grid"></div>
+      <div class="proj-visual-glow" style="background:radial-gradient(ellipse,rgba(201,168,76,.07),transparent 65%);"></div>
+      <!-- speed-line / automotive motion motif -->
+      <div style="position:absolute;inset:0;overflow:hidden;">
+        <div style="position:absolute;top:42%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.35) 40%,rgba(201,168,76,.7) 60%,transparent 100%);"></div>
+        <div style="position:absolute;top:46%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.2) 45%,rgba(201,168,76,.45) 65%,transparent 100%);"></div>
+        <div style="position:absolute;top:50%;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 0%,rgba(240,237,230,.08) 30%,rgba(240,237,230,.18) 55%,transparent 100%);"></div>
+        <div style="position:absolute;top:54%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.2) 45%,rgba(201,168,76,.45) 65%,transparent 100%);"></div>
+        <div style="position:absolute;top:58%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.35) 40%,rgba(201,168,76,.7) 60%,transparent 100%);"></div>
+        <!-- wheel silhouette -->
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(80px,11vw,150px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(201,168,76,.22);"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(50px,7vw,96px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(201,168,76,.12);"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(14px,2vw,24px);aspect-ratio:1;border-radius:50%;background:rgba(201,168,76,.25);"></div>
+      </div>
+      <div class="proj-visual-bg-text">TASUED</div>
+      <div class="proj-visual-meta">
+        <div class="proj-visual-dot"></div>
+        <div class="proj-visual-info">1st in Nigeria, 2nd Africa and 8th in the World</span></div>
+      </div>
+      <div class="proj-visual-corner">Education</div>
+    </div>
+    <div class="proj-body rv">
+      <div class="proj-overview">
+        <p>Role: System Programmer & Mobile Application Developer Architecting digital infrastructure and user-centric solutions to modernise the university's core systems and mobile applications. This dual role bridged backend system stability with frontend accessibility across the institution's digital ecosystem.</p>
+        <p><strong>Architecture & Development:</strong> Designed, developed, and optimised software solutions to meet the evolving needs of the university's infrastructure, ensuring compliance with strict security and data protection policies.</p>
+        <p><strong>Mobile Innovation:</strong> Spearheaded the full development life-cycle of university mobile applications, conducting rigorous testing on live devices and simulators to fine-tune the user experience.</p>
+        <p><strong>Cross-Sector Collaboration:</strong> Partnered with diverse university departments to translate complex operational requirements into fluid, accessible digital platforms.</p>
+        <p><strong>System Optimisation:</strong> Enhanced existing application libraries, refactored codebase for peak performance, and implemented critical design updates using Bootstrap to elevate usability.</p>
+      </div>
+      <div>
+        <div class="proj-scope-label">Scope of Work</div>
+        <ul class="proj-scope-list">
+          <li class="proj-scope-item">System Programming</li>
+          <li class="proj-scope-item">Mobile App Development</li>
+          <li class="proj-scope-item">Bootstrap Implementation</li>
+          <li class="proj-scope-item">UI/UX Design &amp; Development</li>
+          <li class="proj-scope-item">Data Security</li>
+          <li class="proj-scope-item">Cross-Functional Leadership</li>
+        </ul>
+        <a href="https://tasued.edu.ng/home/" target="_blank" rel="noopener" class="proj-cta">View TASUED <span>→</span></a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ── EXPERIENCE ─────────────────────────────── -->
+<section id="experience">
+  <div class="sec-head">
+    <h2 class="sec-title rv">Experience</h2>
+    <span class="sec-ct">Career</span>
+  </div>
+  <div class="tl">
+    <div class="tl-item rv"><div class="tl-yr now">NOW</div><div class="tl-body"><span class="tl-role">Creative Director</span><span class="tl-co">Gabbibada Ltd</span></div></div>
+    <div class="tl-item rv d1"><div class="tl-yr now">NOW</div><div class="tl-body"><span class="tl-role">Digital Marketing Lead</span><span class="tl-co">Precision Timber, England</span></div></div>
+    <div class="tl-item rv"><div class="tl-yr">Previous</div><div class="tl-body"><span class="tl-role">Head of Creative</span><span class="tl-co">LandWey, Lagos</span></div></div>
+    <div class="tl-item rv d1"><div class="tl-yr">Previous</div><div class="tl-body"><span class="tl-role">Senior Product Designer</span><span class="tl-co">ODIO Digital Inc</span></div></div>
+    <div class="tl-item rv"><div class="tl-yr">Previous</div><div class="tl-body"><span class="tl-role">Director of Audio Visual</span><span class="tl-co">ODIO Digital Inc</span></div></div>
+    <div class="tl-item rv d1"><div class="tl-yr">Previous</div><div class="tl-body"><span class="tl-role">System Programmer</span><span class="tl-co">TASUED</span></div></div>
+    <div class="tl-item rv"><div class="tl-yr">Previous</div><div class="tl-body"><span class="tl-role">Mobile Application Developer</span><span class="tl-co">TASUED</span></div></div>
+  </div>
+</section>
+
+<!-- ── INDUSTRIES ─────────────────────────────── -->
+<section id="industries" style="padding:0;">
+  <div class="ind-head">
+    <p>Industries Served — Eight Sectors</p>
+  </div>
+  <div class="ind-item rv"><span class="ind-name">Real Estate</span><span class="ind-num">01</span></div>
+  <div class="ind-item rv d1"><span class="ind-name">Technology</span><span class="ind-num">02</span></div>
+  <div class="ind-item rv d2"><span class="ind-name">Automobile</span><span class="ind-num">03</span></div>
+  <div class="ind-item rv d3"><span class="ind-name">Healthcare</span><span class="ind-num">04</span></div>
+  <div class="ind-item rv"><span class="ind-name">Education</span><span class="ind-num">05</span></div>
+  <div class="ind-item rv d1"><span class="ind-name">Playground Development</span><span class="ind-num">06</span></div>
+  <div class="ind-item rv d2"><span class="ind-name">Oil &amp; Gas</span><span class="ind-num">07</span></div>
+  <div class="ind-item rv d3"><span class="ind-name">Fashion</span><span class="ind-num">08</span></div>
+</section>
+
+<!-- ── PHILOSOPHY ─────────────────────────────── -->
+<section id="philosophy">
+  <div class="phi-bg"></div>
+  <div class="phi-label">Personal Philosophy</div>
+  <div class="phi-quote" id="phi">
+    Art without code<br>is <span class="struck gold">decoration</span>.<br>
+    Code without art<br>is <span class="struck gold">machinery</span>.<br>
+    I build<br><span class="gold">the space in between.</span>
+  </div>
+  <div class="phi-attr">— Gabriel Bada &nbsp;·&nbsp; Gabbibada</div>
+</section>
+
+<!-- ── BENCHMARKS ─────────────────────────────── -->
+<section id="benchmarks">
+  <div class="sec-head">
+    <h2 class="sec-title rv">The Territory</h2>
+    <span class="sec-ct">Building Toward</span>
+  </div>
+  <p class="bench-intro rv">Six figures who define different quadrants of the space I'm building toward. No single name covers the full territory. That gap — unclaimed, undefined, unnamed by anyone else — is precisely where Gabbibada is planting his flag.</p>
+  <div class="bench-grid">
+    <div class="bench-card rv"><div class="bench-name">Rob Bredow</div><div class="bench-tag">ILM CCO</div><div class="bench-desc">Technical creative leadership at Hollywood scale</div></div>
+    <div class="bench-card rv d1"><div class="bench-name">Malik Afegbua</div><div class="bench-tag">African AI Creator</div><div class="bench-desc">African AI creativity with deep cultural narrative</div></div>
+    <div class="bench-card rv d2"><div class="bench-name">Anton Kononov</div><div class="bench-tag">Immersive International</div><div class="bench-desc">Spatial and experiential design as art form</div></div>
+    <div class="bench-card rv"><div class="bench-name">Steven Bartlett</div><div class="bench-tag">Diary of a CEO</div><div class="bench-desc">Personal brand built into a global media platform</div></div>
+    <div class="bench-card rv d1"><div class="bench-name">Peter McKinnon</div><div class="bench-tag">Filmmaker</div><div class="bench-desc">Craft-first filmmaking made aspirational and accessible</div></div>
+    <div class="bench-card rv d2"><div class="bench-name">MKBHD</div><div class="bench-tag">Marques Brownlee</div><div class="bench-desc">Production quality as the brand itself</div></div>
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────── -->
+<section id="contact">
+  <h2 class="contact-title rv">
+    Let's<br><span class="outline">Connect</span>
+  </h2>
+  <div class="contact-cols">
+    <div>
+      <a href="https://linkedin.com/in/gabbibada" class="c-link"><span class="c-link-name">LinkedIn</span><span class="c-link-sub">Professional ↗</span></a>
+      <a href="https://instagram.com/gabbibada" class="c-link"><span class="c-link-name">Instagram</span><span class="c-link-sub">@gabbibada ↗</span></a>
+      <a href="https://twitter.com/gabbibada" class="c-link"><span class="c-link-name">Twitter / X</span><span class="c-link-sub">@gabbibada ↗</span></a>
+      <a href="https://behance.net/gabbibada" class="c-link"><span class="c-link-name">Behance</span><span class="c-link-sub">Design Work ↗</span></a>
+      <a href="https://youtube.com/@gabbibada" class="c-link"><span class="c-link-name">YouTube</span><span class="c-link-sub">Content ↗</span></a>
+    </div>
+    <div>
+      <div class="c-info-label">Get in touch</div>
+      <a href="mailto:hello@gabbibada.com" class="c-email">hello@gabbibada.com</a>
+      <div class="c-info-label" style="margin-bottom:20px;">Available for projects worldwide</div>
+      <p class="c-note">Currently building Gabbibada Ltd into a global creative-tech studio. Open to collaboration, commissions, and conversations about the future of creative technology.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────── -->
+<footer>
+  <div class="foot-copy">© 2025 Gabriel Bada · Gabbibada Ltd</div>
+  <div class="foot-motto">"The space in between."</div>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
